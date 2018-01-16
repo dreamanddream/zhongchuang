@@ -1,0 +1,384 @@
+*{margin:0;padding:0}
+body{
+    font-size:12px;
+    font-family:"Microsoft YaHei","微软雅黑";
+    width:100%;
+    height:100%;
+}
+html{width:100%;height:auto;font-family:"Microsoft YaHei","微软雅黑";}
+/*body{
+    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYiMicro Hei",sans-serif;
+}*/
+ul,ol{list-style:none}
+img{border:0;outline-width:0;}
+a{text-decoration: none;outline: none;color:#454545;}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+i{font-style:normal}
+u{text-decoration:none}
+.img-responsive{display:block;max-width:100%;height:auto}
+.fl{float:left}
+.fr{float:right}
+.clearfix:before,.clearfix:after{
+    content:"";
+    height:0;
+    clear:both;
+    display: block;
+    visibility: hidden;
+}
+.clearfix{
+    zoom:1;
+}
+.clear{
+    clear: both;
+}
+input,textarea,select{
+    outline:none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+textarea {
+    resize: none;
+    overflow: auto;
+}
+a,button{cursor:pointer;}
+/*取消默认*/
+dt{
+    font-weight: normal;
+}
+dt + dd {
+    margin-top: 0;
+}
+p, hr, ul, ol, dl, blockquote, pre, address, fieldset, figure {
+    margin:0;
+}
+ul, ol {
+    padding-left:0;
+}
+
+
+@media screen and (min-width: 1440px){
+    html,body{
+        font-size: 240%;
+    }
+}
+@media screen and (min-width: 1080px) and (max-width: 1440px){
+    html,body{
+        font-size: 240%;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1080px){
+    html,body{
+        /* font-size: 180%;*/
+        font-size: 150%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 800px){
+    html,body{
+        font-size: 133.333%;
+    }
+}
+@media screen and (min-width: 720px) and (max-width: 768px){
+    html,body{
+        font-size: 62.5%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 720px){
+    html,body{
+        font-size:  62.5%;
+    }
+}
+@media screen and (min-width: 540px) and (max-width: 600px){
+    html,body{
+        font-size:  62.5%;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 540px){
+    html,body{
+        font-size: 62.5%;
+    }
+}
+@media screen and (min-width: 375px) and (max-width:480px){
+    html,body{
+        font-size: 62.5%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 375px){
+    html,body{
+        font-size: 62.5%;
+    }
+}
+@media screen and (max-width: 320px){
+    html,body{
+        font-size: 53.33333%;
+    }
+}
+@media only screen and (max-width:600px) {
+    .am-parent a{
+        font-size:16px;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:1025px){
+    .am-parent a{
+        font-size: 20px;
+    }
+}
+/*头部*/
+header .top{
+    margin:1rem 1.5rem;
+    height: 36px;
+}
+header .top .logo-img{
+    width:20%;
+}
+header .top .logo{
+    width:100%;
+    height: 36px;
+}
+header .top #form-search{
+    width:60%;
+    margin-left:5%;
+    margin-right:5%;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    background: #dddddd;
+    position: relative;
+    height: 36px;
+    overflow: hidden;
+}
+header .top #form-search .search{
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+header .top #form-search input{
+    /*padding-top:8px;*/
+    position:absolute;
+    top:9px;
+    width:80%;
+    padding-left:10px;
+    color:#999;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    background: #dddddd;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+/*信息验证时的提示*/
+#msg{
+    position:fixed;
+    bottom:0px;
+    left:50%;
+    margin-left:-25%;
+    /*right:35%;*/
+    width:50%;
+    text-align: center;
+    color:#fff;
+    font-size: 14px;
+    line-height: 30px;
+    height:30px;
+    background: rgba(0,0,0,.6);
+    border-radius: 5px;
+    z-index: 999999;
+}
+/*页面颜色*/
+body{
+    margin:0 auto;
+}
+/*底部*/
+footer{
+    position:fixed;
+    bottom:0;
+    padding: 0.5rem 0;
+    z-index: 10;
+    width:100%;
+    background: #fff;
+}
+footer ul{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: box;
+}
+footer ul li{
+    -box-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-box-flex: 1;
+    -moz-box-flex: 1;
+    text-align: center;
+    -ms-flex:1;
+}
+footer ul li a{
+    font-size:16px;
+    display: inline-block;
+}
+footer ul li dd{
+    text-align: center;
+}
+footer ul li dt img{
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
