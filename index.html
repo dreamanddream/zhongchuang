@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>众创互联</title>
+    <meta name="Keywords" content="众创互联">
+    <meta name="Description" content="众创互联">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+<header class="clearfix">
+<div class="logo fl"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+    <div class="search fl">
+        <form action="" id="search">
+            <select name="" id="">
+                <option value="找服务">找服务</option>
+                <option value="云投资">云投资</option>
+                <option value="云项目">云项目</option>
+            </select>
+            <input type="text">
+            <div class="button">搜索</div>
+        </form>
+        <div class="tag">
+            <a href="">创业新闻</a>
+            <a href="">创业项目</a>
+            <a href="">创业服务</a>
+        </div>
+    </div>
+</header>
+<nav class="clearfix">
+    <div class="nav-wrap clearfix">
+        <p class="service-type">服务类型</p>
+        <ul>
+            <li><a href="">云空间</a></li>
+            <li><a href="">云项目</a></li>
+            <li><a href="">云投资</a></li>
+            <li><a href="">云导师</a></li>
+            <li><a href="">云路演</a></li>
+            <li><a href="">云培训</a></li>
+            <li><a href="">云众筹</a></li>
+            <li><a href="">活动沙龙</a></li>
+            <li><a href="">观点</a></li>
+        </ul>
+    </div>
+
+</nav>
+<!--子导航-->
+<div class="service-item clearfix">
+    <ul class="service-title fl">
+        <li><span><img src="images/1.png" alt=""></span><span>创业服务</span><span>&gt;</span></li>
+        <li><span><img src="images/2.png" alt=""></span><span>创业项目</span><span>&gt;</span></li>
+        <li><span><img src="images/3.png" alt=""></span><span>创业场地</span><span>&gt;</span></li>
+        <li><span><img src="images/4.png" alt=""></span><span>导师服务</span><span>&gt;</span></li>
+        <li><span><img src="images/5.png" alt=""></span><span>融资服务</span><span>&gt;</span></li>
+        <li><span><img src="images/6.png" alt=""></span><span>培训服务</span><span>&gt;</span></li>
+        <li><span><img src="images/7.png" alt=""></span><span>路演驿站</span><span>&gt;</span></li>
+        <li><span><img src="images/8.png" alt=""></span><span>活动沙龙</span><span>&gt;</span></li>
+    </ul>
+    <div class="banner fl">
+        <div id="slideBox" class="slideBox">
+            <div class="hd">
+                <ul><li>1</li><li>2</li><li>3</li></ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li><a href="javascript:void(0);"><img src="images/pic1.jpg" /></a></li>
+                    <li><a href="javascript:void(0);"><img src="images/pic2.jpg" /></a></li>
+                    <li><a href="javascript:void(0);"><img src="images/pic3.jpg" /></a></li>
+                </ul>
+            </div>
+
+            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+
+        </div>
+    </div>
+    <div class="service-detail fl">
+        <div class="service-list">
+            <div class="list-top">
+                <h4>所属领域</h4>
+                <div class="list-detail">
+                    <a href="">教育培训</a>
+                    <a href="">机械制造</a>
+                    <a href="">公众社交</a>
+                    <a href="">农村电商</a>
+                    <a href="">游戏娱乐</a>
+                    <a href="">文化创意</a>
+                    <a href="">旅游行业</a>
+                    <a href="">虚拟现实</a>
+                    <a href="">新能源</a>
+                    <a href="">生物医药 </a>
+                    <a href="">节能环保</a>
+                    <a href="">数据信息产业</a>
+                    <a href="">新兴农业</a>
+                    <a href="">汽车后市场</a>
+                    <a href="">健康管理</a>
+                    <a href="">养老服务</a>
+                    <a href="">智能家居</a>
+                    <a href="">商务服务</a>
+                    <a href=""> 其他</a>
+                </div>
+            </div>
+            <div class="list-top">
+                <h4>融资阶段</h4>
+                <div class="list-detail">
+                    <a href="">种子轮</a>
+                    <a href="">天使轮</a>
+                    <a href="">A轮</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+</script>
+</body>
+</html>

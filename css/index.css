@@ -1,0 +1,81 @@
+/*banner*/
+.nav-wrap{
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 2px solid #1eb1e6;
+}
+.nav-wrap p,.nav-wrap ul li{
+    float: left;
+}
+.nav-wrap .service-type{
+    background: #1eb1e6;
+    color:#fff;
+    font-weight: bold;
+    width:200px;
+    text-align: center;
+}
+.nav-wrap ul li a{
+    font-size: 14px;
+    font-weight: bold;
+}
+.nav-wrap  ul li{
+    width:111px;
+    text-align: center;
+}
+/*导航下各栏目*/
+.service-item {
+    width:910px;
+    /*padding:0 12px;*/
+    font-size: 14px;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+.service-item ul{
+    background: #1d9fce;
+    width:176px;
+    padding:12px;
+}
+.service-item ul li{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+}
+.service-item ul li span:nth-child(2n){
+    margin-left: 15px;
+    margin-right: 70px;
+}
+.service-detail{
+    background: #fff;
+    width: 710px;
+}
+.service-detail .service-list{
+    margin-left: 35px;
+    margin-top: 24px;
+}
+.service-list .list-detail a{
+    margin:0 40px 15px 0;
+    display: inline-block;
+}
+h4{
+    color:#1eb1e6;
+    margin-bottom: 24px;
+}
+/*banner轮播*/
+/* 本例子css */
+.slideBox{ width:450px; height:230px; overflow:hidden; position:relative; border:1px solid #ddd;  }
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.slideBox .hd ul li.on{ background:#f00; color:#fff; }
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{ width:450px; height:230px; display:block;  }
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox .prev,
+.slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:32px; height:40px; background:url(images/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5;   }
+.slideBox .next{ left:auto; right:3%; background-position:8px 5px; }
+.slideBox .prev:hover,
+.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.slideBox .prevStop{ display:none;  }
+.slideBox .nextStop{ display:none;  }
