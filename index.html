@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
 <header class="clearfix">
@@ -48,37 +49,19 @@
 
 </nav>
 <!--子导航-->
-<div class="service-item clearfix">
-    <ul class="service-title fl">
-        <li><span><img src="images/1.png" alt=""></span><span>创业服务</span><span>&gt;</span></li>
-        <li><span><img src="images/2.png" alt=""></span><span>创业项目</span><span>&gt;</span></li>
-        <li><span><img src="images/3.png" alt=""></span><span>创业场地</span><span>&gt;</span></li>
-        <li><span><img src="images/4.png" alt=""></span><span>导师服务</span><span>&gt;</span></li>
-        <li><span><img src="images/5.png" alt=""></span><span>融资服务</span><span>&gt;</span></li>
-        <li><span><img src="images/6.png" alt=""></span><span>培训服务</span><span>&gt;</span></li>
-        <li><span><img src="images/7.png" alt=""></span><span>路演驿站</span><span>&gt;</span></li>
-        <li><span><img src="images/8.png" alt=""></span><span>活动沙龙</span><span>&gt;</span></li>
+<div class="service-item clearfix" id="servie-item">
+    <ul class="service-title fl clearfix">
+        <li><span class="img"><img src="images/0.png" alt=""></span><span>创业服务</span><span>&gt;</span></li>
+        <li><span class="img"><img src="images/1.png" alt=""></span><span>创业项目</span><span>&gt;</span></li>
+        <!--<li><span class="img"><img src="images/3.png" alt=""></span><span>创业场地</span><span>&gt;</span></li>-->
+        <!--<li><span class="img"><img src="images/4.png" alt=""></span><span>导师服务</span><span>&gt;</span></li>-->
+        <!--<li><span class="img"><img src="images/5.png" alt=""></span><span>融资服务</span><span>&gt;</span></li>-->
+        <!--<li><span class="img"><img src="images/6.png" alt=""></span><span>培训服务</span><span>&gt;</span></li>-->
+        <!--<li><span class="img"><img src="images/7.png" alt=""></span><span>路演驿站</span><span>&gt;</span></li>-->
+        <!--<li><span class="img"><img src="images/8.png" alt=""></span><span>活动沙龙</span><span>&gt;</span></li>-->
     </ul>
-    <div class="banner fl">
-        <div id="slideBox" class="slideBox">
-            <div class="hd">
-                <ul><li>1</li><li>2</li><li>3</li></ul>
-            </div>
-            <div class="bd">
-                <ul>
-                    <li><a href="javascript:void(0);"><img src="images/pic1.jpg" /></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/pic2.jpg" /></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/pic3.jpg" /></a></li>
-                </ul>
-            </div>
-
-            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
-            <a class="prev" href="javascript:void(0)"></a>
-            <a class="next" href="javascript:void(0)"></a>
-
-        </div>
-    </div>
-    <div class="service-detail fl">
+    <!--子栏目-->
+    <div class="service-detail">
         <div class="service-list">
             <div class="list-top">
                 <h4>所属领域</h4>
@@ -113,10 +96,261 @@
                 </div>
             </div>
         </div>
+        <div class="service-list">
+            <div class="list-top">
+                <h4>所属领域</h4>
+                <div class="list-detail">
+                    <a href="">教育培训</a>
+                    <a href="">机械制造</a>
+                    <a href="">公众社交</a>
+                    <a href="">农村电商</a>
+                    <a href="">游戏娱乐</a>
+                    <a href="">文化创意</a>
+                    <a href="">旅游行业</a>
+                    <a href="">虚拟现实</a>
+                    <a href="">新能源</a>
+                    <a href="">生物医药 </a>
+                    <a href="">节能环保</a>
+                    <a href="">数据信息产业</a>
+                    <a href="">新兴农业</a>
+                    <a href="">汽车后市场</a>
+                    <a href="">健康管理</a>
+                    <a href="">养老服务</a>
+                    <a href="">生活建筑</a>
+                    <a href="">智能家居</a>
+                    <a href="">商务服务</a>
+                    <a href=""> 其他</a>
+                </div>
+            </div>
+            <div class="list-top">
+                <h4>融资阶段</h4>
+                <div class="list-detail">
+                    <a href="">种子轮</a>
+                    <a href="">天使轮</a>
+                    <a href="">Pre-A</a>
+                    <a href="">A轮</a>
+                    <a href="">B轮</a>
+                    <a href="">C轮</a>
+                    <a href="">D轮</a>
+                    <a href="">E轮</a>
+                    <a href="">IPO</a>
+                </div>
+            </div>
+        </div>
     </div>
+    <!--banner图-->
+    <div class="banner fl">
+        <div id="slideBox" class="slideBox">
+            <div class="hd">
+                <ul><li></li><li></li><li></li></ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li><a href="javascript:void(0);"><img src="images/banner.png" /></a></li>
+                    <li><a href="javascript:void(0);"><img src="images/banner.png" /></a></li>
+                    <li><a href="javascript:void(0);"><img src="images/banner.png" /></a></li>
+                </ul>
+            </div>
+
+            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+
+        </div>
+    </div>
+    <!--新闻-->
+    <div class="news fr">
+        <div id="login">
+            <div class="img-logo"><img src="images/login.png" alt=""></div>
+            <form action="">
+                <div class="login-button">立即登录</div>
+            </form>
+        </div>
+        <p class="news-theme"><span></span><span>热点</span></p>
+        <div class="txtMarquee-top">
+            <div class="bd">
+                <ul class="infoList">
+                    <li><a href="" target="_blank">第二届腾讯818创业节深圳首站启动 拷贝 4</a></li>
+                    <li><a href="" target="_blank">第二届腾讯818创业节深圳首站启动 拷贝 4</a></li>
+                    <li><a href="" target="_blank">第二届腾讯818创业节深圳首站启动 拷贝 4</a></li>
+                    <li><a href="" target="_blank">第二届腾讯818创业节深圳首站启动 拷贝 4</a></li>
+                    <li><a href="" target="_blank">第二届腾讯818创业节深圳首站启动 拷贝 4</a></li>
+                    <li><a href="" target="_blank">第二届腾讯818创业节深圳首站启动 拷贝 4</a></li>
+                    <li><a href="" target="_blank">第二届腾讯818创业节深圳首站启动 拷贝 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--热门项目-->
+<div class="hot-project">
+    <div class="hot-title">
+        <p><span></span><span>热门项目</span><span>精品创业项目18个领域全覆盖</span></p>
+    </div>
+    <div class="project-wrap clearfix">
+        <div class="project-list fl">
+            <div class="pro-title clearfix">
+                <p class="fl">格林深瞳</p>
+                <p class="fr">智能硬件</p>
+            </div>
+            <p class="detail">格灵深瞳是一家同时具备计算机视觉和深 度学习技术以及嵌入式硬件研发能力 …</p>
+            <a href="" class="result-detail">查看详情</a>
+        </div>
+        <div class="project-list fl">
+            <div class="pro-title clearfix">
+                <p class="fl">格林深瞳</p>
+                <p class="fr">智能硬件</p>
+            </div>
+            <p class="detail">格灵深瞳是一家同时具备计算机视觉和深 度学习技术以及嵌入式硬件研发能力 …</p>
+            <a href="" class="result-detail">查看详情</a>
+        </div>
+        <div class="project-list fl">
+            <div class="pro-title clearfix">
+                <p class="fl">格林深瞳</p>
+                <p class="fr">智能硬件</p>
+            </div>
+            <p class="detail">格灵深瞳是一家同时具备计算机视觉和深 度学习技术以及嵌入式硬件研发能力 …</p>
+            <a href="" class="result-detail">查看详情</a>
+        </div>
+        <div class="project-list fl">
+            <div class="pro-title clearfix">
+                <p class="fl">格林深瞳</p>
+                <p class="fr">智能硬件</p>
+            </div>
+            <p class="detail">格灵深瞳是一家同时具备计算机视觉和深 度学习技术以及嵌入式硬件研发能力 …</p>
+            <a href="" class="result-detail">查看详情</a>
+        </div>
+        <div class="project-list fl">
+            <div class="pro-title clearfix">
+                <p class="fl">格林深瞳</p>
+                <p class="fr">智能硬件</p>
+            </div>
+            <p class="detail">格灵深瞳是一家同时具备计算机视觉和深 度学习技术以及嵌入式硬件研发能力 …</p>
+            <a href="" class="result-detail">查看详情</a>
+        </div>
+        <div class="project-list fl">
+            <div class="pro-title clearfix">
+                <p class="fl">格林深瞳</p>
+                <p class="fr">智能硬件</p>
+            </div>
+            <p class="detail">格灵深瞳是一家同时具备计算机视觉和深 度学习技术以及嵌入式硬件研发能力 …</p>
+            <a href="" class="result-detail">查看详情</a>
+        </div>
+        <div class="project-list fl">
+            <div class="pro-title clearfix">
+                <p class="fl">格林深瞳</p>
+                <p class="fr">智能硬件</p>
+            </div>
+            <p class="detail">格灵深瞳是一家同时具备计算机视觉和深 度学习技术以及嵌入式硬件研发能力 …</p>
+            <a href="" class="result-detail">查看详情</a>
+        </div>
+        <div class="project-list fl">
+            <div class="pro-title clearfix">
+                <p class="fl">格林深瞳</p>
+                <p class="fr">智能硬件</p>
+            </div>
+            <p class="detail">格灵深瞳是一家同时具备计算机视觉和深 度学习技术以及嵌入式硬件研发能力 …</p>
+            <a href="" class="result-detail">查看详情</a>
+        </div>
+    </div>
+</div>
+<!--云空间-->
+<div class="hot-space" id="hot-space">
+    <div class="space-wrap">
+        <div class="fron-img">
+            <img src="images/space1.png" alt="">
+            <p class="fron-title">中科云创</p>
+        </div>
+        <div class="back-img">
+            <p class="space-title">中科云创</p>
+            <p class="description">莘县温州商贸城 编辑 莘县温州商贸城是山东省聊城市莘县政府2010年招商引资重…</p>
+            <a href="" class="space-button">查看详情</a>
+        </div>
+    </div>
+    <div class="space-title">
+        <p>云空间</p>
+        <p>各地众创空间全覆盖&nbsp;&nbsp;申请入驻进行孵化</p>
+    </div>
+    <div class="space-wrap">
+        <div class="fron-img">
+            <img src="images/space1.png" alt="">
+            <p class="fron-title">中科云创</p>
+        </div>
+        <div class="back-img">
+            <p class="space-title">中科云创</p>
+            <p class="description">莘县温州商贸城 编辑 莘县温州商贸城是山东省聊城市莘县政府2010年招商引资重…</p>
+            <a href="" class="space-button">查看详情</a>
+        </div>
+    </div>
+
 </div>
 <script type="text/javascript">
     jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+</script>
+<script type="text/javascript">
+    jQuery(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:5,interTime:50});
+</script>
+<script>
+    /*各子栏目详情显示*/
+    $(function () {
+        navChange();
+        function navChange() {
+            var time;
+            var service_item=$("#servie-item");
+            var nav_li=service_item.find(".service-title li");
+            var service_detail=service_item.find(".service-detail");
+            var service_list=service_detail.find(".service-list");
+            var flag=1;
+            var li_flag=1;
+            var list_index;
+            var index;
+            nav_li.on("mouseleave",function () {
+                //var index=parseInt($(this).index())+parseInt(1);
+                //$(this).children(".img").children().attr("src","images/"+index+".png");
+                // var this_index=$(this).index();
+                // console.log("this_index"+this_index)
+                // console.log("index"+index)
+                // if(flag==1){
+                //     nav_li.eq(index).children(".img").children().attr("src","images/blue-"+index+".png");
+                // }else{
+                //     nav_li.eq(index).children(".img").children().attr("src","images/"+this_index+".png");
+                // }
+
+                //  if(flag==1){
+                //     $(this).children(".img").children().attr("src","images/blue-"+index+".png");
+                // }
+                time=setTimeout(change,1000)
+            })
+            nav_li.on("mouseenter",function () {
+                clearTimeout(time);
+                index=$(this).index();
+                $(this).addClass("active").siblings().removeClass("active");
+                $(this).children(".img").children().attr("src","images/blue-"+index+".png");
+                service_detail.show();
+                service_list.hide();
+                service_list.eq(index).show().addClass("a");
+
+            })
+            function change() {
+                nav_li.removeClass("active");
+                service_detail.hide();
+                nav_li.eq(index).children(".img").children().attr("src","images/"+index+".png");
+            }
+            service_detail.on("mouseenter",function () {
+                clearTimeout(time);
+                $(this).show();
+                flag=1;
+                //var index=parseInt($(this).index())+parseInt(1);
+               //nav_li.eq(index).children(".img").children().attr("src","images/blue-"+index+".png")
+                //alert(list_index)
+            })
+            service_detail.on("mouseleave",function () {
+                $(this).hide();
+                flag=0;
+                nav_li.removeClass("active");
+            })
+        }
+    })
 </script>
 </body>
 </html>
