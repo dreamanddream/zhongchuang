@@ -3,23 +3,13 @@ $(function () {
 })
 /*云空间*/
 function space() {
-    var hot_space=$("#hot-space");
-    var front_img=hot_space.find('.fron-img')
-    var flag=1;
-    if(flag==1){
-    front_img.on("mouseenter",function () {
-
-            $(this).next().animate({"bottom":"0"});
-            flag=0;
-
-
+    var hot_space=$("#hot-space ").find(".space-wrap");
+    hot_space.on("mouseover",function () {
+        $(this).addClass("active").siblings().removeClass("active");
     })
-    }
-    front_img.on("mouseleave",function () {
-        if(flag==0){
-            $(this).next().animate({"bottom":"-215px"});
-            flag=1;
-        }
+
+    hot_space.on("mouseout",function () {
+        $(this).removeClass("active");
 
     })
 }
