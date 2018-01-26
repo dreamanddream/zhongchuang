@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.min.js"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            list-style: none;
+        }
+        #fixed-dock{
+            position: fixed;
+            bottom: 35%;
+            right: 0;
+            z-index: 999;
+            height: 326px;
+        }
+
+        #fiexd-bar{
+            width: 60px;
+            background: rgba(0,0,0,0.4);
+            border-radius:10px 0px 0px 10px;
+            -webkit-transition: all .3s ease-in-out 0s;
+            -moz-transition: all .3s ease-in-out 0s;
+            -ms-transition: all .3s ease-in-out 0s;
+            -o-transition: all .3s ease-in-out 0s;
+            transition: all .3s ease-in-out 0s;
+            position: absolute;
+            right:0px;
+        }
+        .fclose #fiexd-bar{
+            right: -70px;
+        }
+        #fiexd-bar li{
+            height: 60px;
+            /*line-height: 60px;*/
+        }
+        .flimg {
+            text-align: center;
+            height: 60px;
+            position: relative;
+        }
+        .fli1{
+            background:url(images/fl1.png) center no-repeat;
+        }
+        .fli2{
+            background:url(images/fl2.png) center no-repeat;
+        }
+        .fli3{
+            background:url(images/fl3.png) center no-repeat;
+        }
+        .fli4{
+            background:url(images/fl4.png) center no-repeat;
+        }
+        .fli5{
+            background:url(images/fl5.png) center 20% no-repeat;
+        }
+        .fli5 p{
+            color: #fff;font-size: 12px;
+            padding-top: 50%;
+        }
+        .flc-zxkf{
+            width: 0px;
+            height: 0px;
+            background:rgba(0,0,0,0.4);
+            border-radius:10px;
+            position: absolute;
+            right:61px;
+            top: 0;
+            opacity: 0;
+        }
+        .kefuzx{
+            height: 90px;
+        }
+        .kefuzx1{
+            height: 60px;
+        }
+        .flc-zxkf h5{
+            font-size: 18px;
+            color: #fff;
+            text-align: center;
+            font-weight: 500;
+            height: 60px;
+            line-height: 60px;
+        }
+        .zxbox{
+            display:block;
+            height:60px;
+            line-height: 60px;
+            color: #fff;
+            font-size:16px;
+            padding-left:20%;
+        }
+        .qqzxa{
+            background:url(../img/float/fl6.png) 20% center no-repeat;
+        }
+        .sqzxa{
+            background:url(../img/float/fl7.png) 20% center no-repeat;
+        }
+        .ifrane{
+            position: absolute;
+            left:50%;
+            margin-left: -400px;
+            z-index: 9999;
+            bottom:15%;
+        }
+        .sdibox{
+            height: 42px;
+            color: #fff;
+            line-height: 42px;
+            font-size: 16px;
+            padding-left: 15%;
+        }
+        .shoq1{
+            background: url(../img/float/fl8.png) 10% 0 no-repeat;
+        }
+        .sq1phone{
+            height: 38px;
+            line-height: 32px;
+            padding-top: 6%;
+            padding-left: 20%;
+            background: url(../img/float/fl2.png) 10% 70% no-repeat;
+        }
+        .shouhou{
+            padding-top: 5%;
+        }
+        .flc-zxkf1 p{
+            font-size: 16px;
+            color: #fff;
+        }
+        .ljp{
+            margin-top: 8px;
+        }
+        #tanchu {
+            width: 420px;
+            height:302px;
+            background:rgba(0,0,0,0.7);
+            z-index: 999;
+            /*border: 1px solid #747474;*/
+            display: none;
+            position: fixed;
+            border-radius: 10px;
+            top: 40%;
+            left: 50%;
+            margin-left: -210px;
+
+        }
+        #tanchu h5{
+            text-align: center;
+            line-height:49px;
+            height: 49px;
+            font-size: 18px;
+            color: #fff;font-weight: 500;
+        }
+        .lzxbiaot{
+            position: relative;
+        }
+        .cha{
+            position: absolute;
+            left: 20px;
+            top: 14px;
+            width: 20px;
+            height: 20px;
+            background: url(../img/float/cha.png);
+        }
+        .lybiaodan{
+            margin: 0 20px;
+        }
+        .lyname,.lyphone1{
+            border: 1px solid #c1bfbf;
+            background: none;
+            width: 176px;
+            padding-left: 2px;
+            height: 38px;
+            line-height: 27px;
+            border-radius:4px;
+            color: #fff;
+        }
+        .mlft15{
+            margin-left:14px;
+        }
+        .yaoqiuss{
+            resize:none;
+            height:113px;
+            padding-top: 5px;
+            padding-left: 2px;
+            background: none;
+            width: 372px;
+            margin-top:15px;
+            border: 1px solid #c1bfbf;
+            border-radius:4px;
+            color: #fff;
+        }
+        .lttijao{
+            width: 110px;
+            height: 38px;
+            border: none;
+            margin-top: 14px;
+            font-size: 20px;
+            line-height: 39px;
+            background: #a7997a;
+            border-radius:4px;
+            color: #fff;
+        }
+        .lytj-input{
+            text-align: center;
+        }
+        .j_backtop{
+            cursor:pointer;
+        }
+        #cnzz_stat_icon_1260925701{
+
+            margin-left: 4px;
+            vertical-align: -2px;
+        }
+        #fixed-dock .soff{
+            background-position:-31px 0px;
+        }
+        .si0phone{
+            display: none;
+        }
+        .fix1{
+            display: none;
+        }
+    </style>
+</head>
+<body style="height:2000px;">
+<div id="fixed-dock">
+    <div id="fiexd-bar">
+        <ul>
+            <li>
+                <div class="flimg fli1">
+                    <div class="flc-zxkf">
+                        <h5>在线客服</h5>
+                        <div class="kefuzx1 qqzx">
+                            <a href="http://wpa.qq.com/msgrd?v=3&uin=2851047636&site=qq&menu=yes" class="zxbox qqzxa">QQ咨询</a>
+                        </div>
+                        <div class="kefuzx1 qqzx">
+                            <a href="http://wpa.qq.com/msgrd?v=3&uin=2851047639&site=qq&menu=yes" class="zxbox qqzxa">QQ咨询</a>
+                        </div>
+                        <div class="kefuzx1 shaqizx">
+                            <!-- 	<a href="http://p9.qiao.baidu.com//im/index?siteid=5493961&ucid=7768384&lastsubid=&from=%E5%8C%97%E4%BA%AC%E6%9C%9D%E9%98%B3&bid=35acc79863e2afc09432db40&chattype=1&groupid=&groupname=&subid=&subname=&ref=http%3A%2F%2Fwww.think.com%2Findex.php%2FThinkerInternet%2FIndex%2Findex%2Fhm.baidu.com%2Fh.js%253Fca1467e896d69827fda73809177220a0" class="zxbox sqzxa" target="myFrameName">在线咨询</a> -->
+                            <a href="javascript:void(0);" class="zxbox sqzxa">在线咨询</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                <div class="flimg fli2">
+                    <div class="flc-zxkf">
+                        <h5>联系我们</h5>
+                        <div class="kefuzx shoqian" style="height: 142px;">
+                            <div class="sdibox shoq1">售前咨询电话</div>
+                            <div class="sdibox sq1phone"><a href="tel:4008010504" style="color: #fff;"></a>4008-010-504</div>
+                            <div class="sdibox sq1phone"><a href="tel:01057736822" style="color: #fff;"></a>010-57736811</div>
+                        </div>
+                        <div class="kefuzx shoqian shouhou">
+                            <div class="sdibox shoq1">售后服务电话</div>
+                            <div class="sdibox sq1phone">010-57736822</div>
+                        </div>
+
+                    </div>
+                    <a href="tel:4008010504" style="color: #fff;" class="si0phone"></a>
+                </div>
+            </li>
+            <li>
+                <div class="flimg fli3">
+                    <div class="flc-zxkf flc-zxkf1">
+                        <!-- 	<h5>关注我们</h5>
+                            <div><img src="/Public/ThinkerInternet/img/gfwx.jpg" alt="公众号"></div>
+                            <p class="ljp">关注微信公众号</p>
+                            <p class="ljp">了解实时优惠信息</p> -->
+                        <h5>我有需求</h5>
+                        <div><img src="images/tjian.jpg" alt="" style="width: 157px;height: 157px;"></div>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="flimg fli4" onclick="show()">
+                </div>
+            </li>
+            <li>
+                <div class="flimg fli5 j_backtop">
+                    <p class="j_backtop">回顶部</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <a class="switch"></a>
+    <script>
+        $(function () {
+            slidebox();
+        })
+        function slidebox() {
+            var fenbian3 = screen.width;
+            $('.fli1').hover(function(){
+                $(this).css({'background':"rgba(0,0,0,0.5) url(images/fl1.png) center no-repeat","border-radius":"10px 0px 0px 0px"});
+
+                if(fenbian3>760){
+                    $(this).find('.flc-zxkf').stop().animate({'width':'240','height':'212','opacity':'1'},200);
+                }else{
+                    $("#fixed-dock").css("display","none")
+                }
+
+            },function(){
+
+                $(this).css({'background':"url(images/fl1.png) center no-repeat"});
+                $(this).find('.flc-zxkf').stop().animate({'width':'0','height':'0','opacity':'0'},200);
+            });
+            $('.fli2').hover(function(){
+                $(this).css({'background':"rgba(0,0,0,0.5) url(images/fl2.png) center no-repeat"});
+                if(fenbian3>760){
+                    $(this).find('.flc-zxkf').stop().animate({'width':'240','height':'224','opacity':'1'},200);
+                }else{
+                    $("#fixed-dock").css("display","none")
+                }
+
+            },function(){
+
+                $(this).css({'background':"url(images/fl2.png) center no-repeat"});
+                $(this).find('.flc-zxkf').stop().animate({'width':'0','height':'0','opacity':'0'},200);
+            });
+
+            $('.fli3').hover(function(){
+                $(this).css({'background':"rgba(0,0,0,0.5) url(images/fl3.png) center no-repeat"});
+                $(this).find('.flc-zxkf').stop().animate({'width':'240','height':'252','opacity':'1'},200);
+            },function(){
+                $(this).css({'background':"url(images/fl3.png) center no-repeat"});
+                $(this).find('.flc-zxkf').stop().animate({'width':'0','height':'0','opacity':'0'},200);
+            });
+            $('.sqzxa').click(function(){
+                window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225493961%22%2C%22userId%22%3A%227768384%22%7D', '鍟嗘ˉ', 'width=1000,height=500,top=200,left=500, scrollbars=yes');
+            })
+            $('.sqzxa1').click(function(){
+                window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225493961%22%2C%22userId%22%3A%227768384%22%7D', '鍟嗘ˉ', 'width=1000,height=500,top=200,left=500, scrollbars=yes');
+            })
+            $('.switch').click(function(){
+                $(this).toggleClass('soff')
+                if($(this).hasClass('soff')){
+                    $('#fixed-dock').addClass('fclose')
+                }else{
+                    $('#fixed-dock').removeClass('fclose')
+                }
+            })
+        }
+    </script>
+    <script>
+        $('.j_backtop').click(function () {
+            $('body,html').animate(
+                { scrollTop: '0px' }, 2000
+            );
+        });
+
+    </script>
+</div>
+</body>
+</html>
