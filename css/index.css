@@ -847,5 +847,27 @@ sup {
     line-height: 0;
     vertical-align: baseline;
 }
+/*合作伙伴*/
+.coor{
+    background: #f8f8f8;
+    margin-top: 38px;
+}
+.coor .hot-titles{
+    background:#f8f8f8;
+    margin-bottom: 20px;
+}
+.coor-img a{
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.coor-img a:nth-child(7n){
+    margin-right: 0;
+}
+.coor-img a img{
+    width:148px;
+    height: 77px;
+    border:1px solid #ddd;
+}
 
 
