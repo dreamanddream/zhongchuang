@@ -292,15 +292,9 @@ h4{
     width:296px;
     height:215px;
     overflow: hidden;
-<<<<<<< HEAD
     margin-right:4px;
     margin-bottom: 4px;
-=======
     float: left;
-}
-.sss{
-    float: left;
->>>>>>> 9eeca6fe99f1e13f660135982a3c52ad2e2b5cff
 }
 .hot-space .space-wrap:last-child{
     margin-right: 0;
@@ -315,7 +309,6 @@ h4{
     width:100%;
     background: rgba(0,0,0,0.7);
     text-align: center;
-<<<<<<< HEAD
     bottom:0px;
     height:0px;
     opacity: 0;
@@ -328,19 +321,8 @@ h4{
 #hot-space .active .back-img{
     height:215px;
     opacity: 1;
-=======
-    /*bottom:-215px;*/
-   opacity: 0;
-    bottom: 0;
-    height:0;
-    -webkit-transition: all .4s linear;
-    transition: all .4s linear;
 }
-.active .back-img{
-    height:215px !important;
-    opacity: 1 !important;
->>>>>>> 9eeca6fe99f1e13f660135982a3c52ad2e2b5cff
-}
+
 .space-wrap .back-img .space-title{
     color:#fff;
     font-size: 16px;
