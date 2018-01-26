@@ -37,7 +37,6 @@ function service() {
 
 /*云空间*/
 function space() {
-    var hot_space=$("#hot-space");
     var space_wrap=hot_space.find(".space-wrap");
     var fron_title=hot_space.find(".fron-title")
     var front_img=hot_space.find('.fron-img')
@@ -45,7 +44,6 @@ function space() {
             $(this).addClass("active").siblings().removeClass("active");
             $(this).children().children(".fron-title").hide();
     })
-
     space_wrap.on("mouseleave",function () {
        $(this).removeClass("active")
         $(this).children(fron_title).show();
