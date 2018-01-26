@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="http://mockjs.com/dist/mock.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.SuperSlide.2.1.1.js"></script>
     <script src="js/index.js"></script>
@@ -736,5 +737,95 @@
         swiper.autoplay.start();
     })
 </script>
+<!--mock.js-->
+<script>
+    var Random=Mock.Random;// 引入random,生成随机数据,对于random的使用可以使用@的方式来调用，Mock.Random 的方法在数据模板中称为『占位符』，书写格式为 @占位符(参数 [, 参数]) 。也可以使用random
+    var data1=Mock.mock(
+        'http://mockjs', {
+            "userName" : '@name',     //模拟名称
+            "age|1-100":100,          //模拟年龄(1-100)
+            "color"    : "@color",    //模拟色值
+            "date"     : "@date('yyyy-MM-dd')",  //模拟时间
+            "url"      : "@url()",     //模拟url
+            "content"  : "@cparagraph()", //模拟文本
+            "name|3" :{"name":"2"},
+            "array1|8": [
+                {
+                    // "name|+1": [
+                    //     "Hello",
+                    //     "Mock.js",
+                    //     "!"
+                    // ]
+                date:"2017-09-10",
+                name:"hello",
+                tag:"智能硬件",
+                "des":"1格灵深瞳是一家同时具备计算机视觉和深 度学习技术以及嵌入式硬件" ,
+                address:"北京"
+                }
+            ],
+            "array2|4":[
+                {
+                    tag:Random.date(),//使用random方式调用
+                    name:"@email"//使用@加站位符的方式调用
+                }
+            ]
+        }
+    );
+
+    //ajax请求
+    $(function () {
+        $.ajax({
+            url        : "http://mockjs",    //请求的url地址
+            dataType  : "json",   //返回格式为json
+            async      : true, //请求是否异步，默认为异步，这也是ajax重要特性
+            // data       : {id:1},    //参数值
+            type       : "get",   //请求方式,如果这里写delete在页面中会出现undefined,填写post也会出现undefined，好像只支持get请求
+            beforeSend : function() {
+                //请求前的处理
+            },
+            success: function(data1) {
+                //请求成功时处理
+               // console.log(req);
+               // alert(req.userName)
+                for(var i=0;i<data1.array1.length;i++){
+                    var _html = _html+'<div class="project-list fl">'
+                        +'<div class="pro-title clearfix">'
+                        +'<p class="fl">'+data1.array1[i].name+'</p>'
+                        +'<p class="fr">智能硬件</p>'
+                        +'</div>'
+                        +'<p class="detail">'+data1.array1[i].des+'</p>'
+                        +'<a href="" class="result-detail">查看详情</a>'
+                        +'</div>'
+                }
+                // $(".project-wrap").appendChild(_html)
+                console.log(data1.array2[0].tag)
+                console.log(data1.array2[0].name)
+                $(".project-wrap").html(_html)
+                // for(var i=0;i<req.array.length;i++){
+                //     var html = '<div class="project-list fl">'
+                //     +'<div class="pro-title clearfix">'
+                //     +'<p class="fl">'+req.array[i].name+'</p>'
+                //    console.log(req.array[i].name)
+                //    console.log(req.array[i].date)
+                //    console.log(req.array[i].address)
+                // }
+                //console.log(req.array.length)
+                //console.log(req.array[0].name)
+
+            },
+            complete: function() {
+                //请求完成的处理
+            },
+            error: function() {
+                //请求出错处理
+            }
+        });
+
+    })
+
+</script>
+
+
+
 </body>
 </html>
