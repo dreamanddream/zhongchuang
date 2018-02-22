@@ -1,3 +1,7 @@
+.big-wrap{
+    width:1200px;
+    margin:0 auto;
+}
 /*更多*/
 .more {
     width: 78px;
@@ -788,9 +792,14 @@ h4{
 }
 
 /*数字分析*/
+.big-number{
+    background: #d8d8d8;
+}
 .lch-number {
     background: #d8d8d8;
     height: auto;
+    width:1200px;
+    margin:0 auto;
 }
 .wg1200 {
     width: 1200px;
@@ -850,7 +859,8 @@ sup {
 /*合作伙伴*/
 .coor{
     background: #f8f8f8;
-    margin-top: 38px;
+    margin:38px auto 0;
+    width:1200px;
 }
 .coor .hot-titles{
     background:#f8f8f8;
@@ -869,5 +879,56 @@ sup {
     height: 77px;
     border:1px solid #ddd;
 }
+
+/*底部*/
+footer{
+    background: #2e2e2e;
+    color:#b5b3b3;
+}
+footer .footer-wrap{
+    width:1200px;
+    margin:0 auto;
+}
+footer .footer-list{
+    float: left;
+    width:300px;
+    padding-top:20px;
+    padding-bottom:28px;
+}
+footer .footer-list dd img{
+    width:112px;
+    height: 110px;
+}
+footer .footer-list a{
+    color:#b5b3b3;
+}
+footer .footer-list p{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+footer .footer-list li{
+    line-height:22px;
+}
+footer .footer-list dl{
+    float: left;
+    text-align: center;
+}
+footer .footer-list dl:first-child{
+    margin-right: 15px;
+}
+footer .footer-list dt{
+    margin-bottom: 20px;
+    font-size: 22px;
+    color:#b5b3b3;
+}
+footer .ban{
+    background: #212121;
+    text-align: center;
+    height:62px;
+    line-height:62px;
+}
+
+
+
 
 
