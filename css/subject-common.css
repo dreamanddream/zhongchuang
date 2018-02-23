@@ -39,3 +39,330 @@ header .header-wrap{
 	font-size: 14px;
 	color: #fff;
 }
+/*banner*/
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	line-height:0;
+}
+.swiper-wrapper .swiper-slide img{
+	width:100%;
+	max-width:1920px;
+	margin:0 auto;
+	display: inline-block;
+}
+.swiper-pagination .swiper-pagination-bullet {
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	border-radius: 100%;
+	background: #fff;
+	opacity: 1;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+	background: #000;
+	opacity: 1;
+}
+/*云项目*/
+.cloud-project{
+	width:1200px;
+	margin:68px auto 0;
+}
+.cloud-project .cloud-title{
+	text-align:center;
+	margin-bottom: 50px;
+}
+.cloud-project .cloud-title p:first-child{
+	font-size: 36px;
+	color: #000;
+}
+.cloud-project .cloud-title p:last-child{
+	font-size: 18px;
+	color: #666;
+	margin-top: 10px;
+}
+.cloud-project .fron-img{
+	height: 366px;
+}
+.cloud-project .cloud-list{
+	margin-right: 24px;
+	position: relative;
+}
+.cloud-project .cl-wrap .cloud-list:nth-child(4n){
+	margin-right: 0;
+}
+.cloud-project .fron-img .cloud-img{
+	width: 280px;
+	height: 258px;
+}
+.cloud-project .fron-img .title-des{
+	font-size: 18px;
+	font-weight: bold;
+	width:234px;
+	color: #000;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.cloud-project .fron-img .font-des{
+	padding:20px;
+}
+.cloud-list .line{
+	width: 20px;
+	height: 5px;
+	background:#60ceee;
+	margin:10px 0;
+}
+.fron-img .type .flag{
+	margin-right: 20px;
+}
+.cloud-list{
+	border:1px solid #e5e5e5;
+	margin-bottom: 20px;
+}
+.cloud-project .back-img{
+	padding:60px 24px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left:0;
+    width:100%;
+    bottom:0px;
+    height:0px;
+    opacity: 0;
+     background: rgba(0,0,0,0.7);
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+#cloud .active .back-img{
+	height:366px;
+	opacity: 1;
+}
+.cloud-project .back-img .back-title{
+	font-size: 18px;
+	color:#fff;
+} 
+.cloud-project .back-img .description{
+	font-size: 14px;
+	color: #fff;
+}
+.cloud-project .back-img{
+	height:0;
+	overflow: hidden;
+}
+.cloud-project .back-img .description{
+	line-height: 24px;
+}
+/*更多特权*/
+.special-right{
+	width: 1200px;
+	margin:70px auto 0;
+}
+.special-right .special-title{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.special-right .special-title p:first-child{
+	font-size: 36px;
+	color: #000;
+}
+.special-right .special-title p:last-child{
+	font-size: 18px;
+	color: #666;
+	margin-top: 10px;
+}
+.special-right .special-list{
+	width:270px;
+	background:#60ceee;
+	text-align: center;
+	padding:30px 0;
+	float: left;
+	margin-right: 40px;
+}
+.special-right .special-wrap .special-list:nth-child(4n) {
+	margin-right: 0;
+}
+.special-right .special-list .right{
+	font-size: 26px;
+	color:#fff;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	position: relative;
+}
+.special-right .special-list .line{
+	width:35px;
+	height: 5px;
+	background: #fff;
+	display: block;
+	position: absolute;
+	left:50%;
+	bottom:-12px;
+	-webkit-transform: translate(-50%,0);
+     -moz-transform: translate(-50%,0);
+     -ms-transform: translate(-50%,0);
+     -o-transform: translate(-50%,0);
+     transform: translate(-50%,0);
+}
+.special-right .special-list .right-wrap{
+	font-size: 18px;
+	color: #fff;
+}
+/*领域*/
+.field{
+	width:1200px;
+	margin:70px auto 0;
+}
+.field-title{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.field .field-title p:first-child{
+	font-size: 36px;
+	color: #000;
+}
+.field .field-title p:last-child{
+	font-size: 18px;
+	color: #666;
+	margin-top: 10px;
+}
+.field .field-list{
+	width: 266px;
+	height: 115px;
+	position: relative;
+	margin-bottom: 22px;
+	float: left;
+	margin-right: 45px;
+}
+.field .field-list:nth-child(4n){
+	margin-right: 0;
+}
+.field .field-list img{
+	width: 266px;
+	height: 115px;
+}
+.field .des-type{
+	position: absolute;
+	z-index: 4;
+	width:266px;
+	height: 115px;
+	background: rgba(0,0,0,0.7);
+	top:0;
+	left:0;
+	line-height: 115px;
+}
+.field .des-type{
+	text-align:center;
+}
+.field .des-type p:first-child{
+	font-size: 20px;
+	color:#fff;
+}
+.field .des-type .line{
+	width:20px;
+	background: #fff;
+	height:5px;
+	position: absolute;
+	top:80px;
+	left:50%;
+	-webkit-transform: translate(-50%,0);
+     -moz-transform: translate(-50%,0);
+     -ms-transform: translate(-50%,0);
+     -o-transform: translate(-50%,0);
+     transform: translate(-50%,0);
+}
+/*申请认证流程*/
+.apply{
+	width:1200px;
+	margin:70px auto 0;
+} 
+.apply .apply-title{
+	margin-bottom: 50px;
+	text-align: center;
+}
+.apply .apply-title p:first-child{
+	font-size: 36px;
+	color: #000;
+}
+.apply .apply-title p:last-child{
+	font-size: 18px;
+	color: #666;
+	margin-top: 10px;
+}
+.apply .num{
+	font-size: 60px;
+	color:#60ceee;
+}
+.apply .apply-list{
+	text-align: center;
+	width:240px;
+	float: left;
+}
+.apply .apply-list .data{
+	font-size: 24px;
+	color: #000;
+	position: relative;
+	margin-bottom:15px;
+}
+.apply .apply-list .data .line{
+	position: absolute;
+	width:20px;
+	height:3px;
+	background: #60ceee;
+	top:37px;
+	left:50%;
+	-webkit-transform: translate(-50%,0);
+     -moz-transform: translate(-50%,0);
+     -ms-transform: translate(-50%,0);
+     -o-transform: translate(-50%,0);
+     transform: translate(-50%,0);
+}
+.apply .apply-list .zheng{
+	font-size: 14px;
+	color: #666;
+}
+.apply .lines{
+	width:220px;
+	height:5px;
+	background:#e6e6e6;
+	float: left;
+	margin-top: 92px;
+}
+.apply .apply-data{
+	margin-bottom: 60px;
+}
+.apply .button{
+	text-align: center;
+	font-size: 24px;
+	color: #666;
+	background: #e6e6e6;
+	border:1px solid #000;
+	width: 170px;
+	margin:0 auto;
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: 90px;
+}

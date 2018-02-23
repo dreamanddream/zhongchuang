@@ -879,53 +879,26 @@ sup {
     height: 77px;
     border:1px solid #ddd;
 }
-
-/*底部*/
-footer{
-    background: #2e2e2e;
-    color:#b5b3b3;
+/* select默认样式 */
+select {
+appearance:none;
+-moz-appearance:none;
+-webkit-appearance:none;
+padding-right: 14px;
 }
-footer .footer-wrap{
-    width:1200px;
-    margin:0 auto;
+select::-ms-expand { display: none; }
+.san{
+    width:0;
+    height:0;
+    border-width: 5px;
+    border-color:#000 transparent transparent transparent; 
+    border-style: solid;
+    position: absolute;
+    left:52px;
+    top:14px;
 }
-footer .footer-list{
-    float: left;
-    width:300px;
-    padding-top:20px;
-    padding-bottom:28px;
-}
-footer .footer-list dd img{
-    width:112px;
-    height: 110px;
-}
-footer .footer-list a{
-    color:#b5b3b3;
-}
-footer .footer-list p{
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-footer .footer-list li{
-    line-height:22px;
-}
-footer .footer-list dl{
-    float: left;
-    text-align: center;
-}
-footer .footer-list dl:first-child{
-    margin-right: 15px;
-}
-footer .footer-list dt{
-    margin-bottom: 20px;
-    font-size: 22px;
-    color:#b5b3b3;
-}
-footer .ban{
-    background: #212121;
-    text-align: center;
-    height:62px;
-    line-height:62px;
+#search{
+    position: relative;
 }
 
 
