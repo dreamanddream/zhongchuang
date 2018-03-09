@@ -1,0 +1,62 @@
+.activity{
+    width:1200px;
+    margin:20px auto;
+}
+.activity .activity-img{
+    width: 590px;
+    height: 339px;
+}
+.activity .activity-item{
+    position: relative;
+    display: block;
+    background: #fff;
+    width:590px;
+    margin-bottom: 20px;
+}
+.activity .activity-item:nth-child(odd){
+    float: left;
+}
+.activity .activity-item:nth-child(even){
+    float: right;
+}
+.activity .tag{
+    width:70px;
+    height: 30px;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    left:0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+}
+.activity .font-description{
+    padding:0 15px 15px;
+    border-bottom:1px solid #eee;
+}
+.activity .font-description p:first-child{
+    font-size: 16px;
+    color:#000;
+    margin-top: 20px;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.activity .font-description p:last-child{
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+.activity .tag-type{
+    padding:20px 18px;
+}
+.activity .tag-type .fl img{
+    height: 12px;
+}
+.activity .tag-type span{
+    margin-left: 5px;
+}

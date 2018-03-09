@@ -117,6 +117,135 @@ header .tag a{
     margin-right: 10px;
     color: #999999;
 }
+/*各个子栏目header*/
+#header{
+    background: #000;
+    height: 77px;
+    line-height: 77px;
+    position: relative;
+}
+#header .header-wrap{
+    width:1200px;
+    margin:0 auto;
+}
+#header .header-wrap .subject-logo{
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+}
+#header .header-item{
+    margin-left: 170px;
+}
+#header .header-item li{
+    float: left;
+    margin:0 20px;
+}
+#header .header-item li a{
+    font-size: 14px;
+    color: #fff;
+}
+#header .header-wrap .header-user{
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+}
+#header .header-wrap .log .register{
+    margin-left: 30px;
+    margin-right: 15px;
+}
+#header .header-wrap .log a{
+    font-size: 14px;
+    color: #fff;
+}
+.common-wrap{
+    width:100%;
+    background: #fff;
+}
+.common-top{
+    width:1200px;
+    margin:0 auto;
+    background: #fff;
+    padding-bottom:18px;
+}
+.common-top .common-banner{
+    font-size: 0;
+    line-height: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.common-top .common-line{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+.common-banner img{
+    width:100%;
+}
+/*所属领域*/
+.area-wrap li{
+    float: left;
+    margin-right: 25px;
+    line-height: 40px;
+}
+.area-wrap .area{
+    font-size: 14px;
+    color: #000;
+    margin-right: 30px;
+}
+.area-wrap .area,.area-wrap .quan{
+    height:60px;
+}
+.area-wrap li a{
+    font-size: 14px;
+    color:#000;
+}
+.area-wrap .title-active{
+    color: #60ceee;
+}
+.tag-wrap .area-wrap .active{
+    background: #eee;
+    padding:5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.tag-wrap .common-choose{
+    float: right;
+}
+.tag-wrap .common-choose span{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.tag-wrap .common-choose .choose{
+    border:1px solid #bfbfbf;
+    width: 198px;
+    height: 28px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+/*分页*/
+.page-wrap{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.page-wrap .page-active{
+    background:#60ceee;
+}
+.page-wrap a{
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    height:40px;
+    width:40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #fff;
+    border:1px solid #eee;
+    margin-right: 7px;
+}
 /*底部*/
 footer{
     background: #2e2e2e;

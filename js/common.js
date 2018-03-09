@@ -2,6 +2,7 @@
 $(function () {
 	cloud();
     LimitNumber("description",150);
+    LimitNumber("font-des",40)
 })
 function cloud() {
     var cloud=$("#cloud");

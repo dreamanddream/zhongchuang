@@ -1,0 +1,62 @@
+.pingtai{
+    width: 1200px;
+    margin:0 auto;
+}
+.pingtai .pingtai-item{
+    padding:20px;
+    background: #fff;
+}
+.pingtai .pingtai-banner{
+    float: left;
+}
+.pingtai .pingtai-banner img{
+    width: 550px;
+    height: 325px;
+}
+.pingtai .pingtai-des{
+    float: right;
+    width: 575px;
+}
+.pingtai .pingtai-des .title{
+    font-size: 24px;
+    color: #60ceee;
+}
+.pingtai .pingtai-des .ping-des{
+    font-size: 16px;
+    color: #666666;
+    margin-top: 15px;
+}
+.pingtai ul{
+    border-bottom:1px solid #eee;
+}
+.pingtai ul li img{
+    margin-bottom:5px;
+    width: 30px;
+    height: 30px;
+}
+.pingtai ul li{
+    text-align: center;
+    float: left;
+    margin:15px 20px;
+}
+.pingtai .button-type a{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.pingtai .button-type .xiangqing{
+    border:1px solid #eee;
+    margin-right: 50px;
+}
+.pingtai .button-type .shenqing{
+    background: #60ceee;
+}
+.pingtai .button-type .fr{
+    margin-top: 30px;
+}
+.pingtai .button-type .fr img{
+    margin-right: 5px;
+}
